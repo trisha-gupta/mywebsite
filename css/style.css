@@ -1,0 +1,326 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg_gallary{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+.pimg_gallary{
+  background-image:url(../img/2015-Cover-Gallery-banner-480x150.jpg);
+  min-height:400px;
+
+	}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+
+}
+ .gray{
+	 background-color: #3a3131c9;
+	  
+	  }
+
+.hit-the-floor {
+  line-height: 61px;
+  color: #121312;;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.hit-the-floor {
+  text-align: center;
+}
+.tg_main_img{
+	max-height: 237px;
+    width: 209px;
+    border-radius: 16px;	
+	
+ }
+
+.batman_contact{
+	width: 100%; height: 100px;  position: relative;
+}
+
+.batman_contact img{
+	width: 140px; height: 120px;
+	position: absolute; 
+	left: 0; top: -15px;
+	animation-name: batmanbhag;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes batmanbhag{
+	0%{left: 85%}
+	100%{ left: 0% }
+}
+.cell_font{
+	font-size: 2.8rem;
+	}
+<!--- Animation Projects Start--->
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+.cont{
+  margin:80px auto;
+  width:80%;
+}
+.is-animate {
+    background: #c3c0b8;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    font-weight: bolder;
+	border:1px solid black;
+    display: -webkit-inline-box;
+    padding: 14px;
+    border-radius: 7px;
+}
+.is-animate > div {
+    animation-name: style;
+    display: -webkit-inline-box;
+    color: #fff;
+    padding: 9px;
+    background: #171616;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 2px 2px 9px 2px;
+}
+.l{
+  animation: letterspacing 1s infinite alternate cubic-bezier(.2, 0, 0, 1);
+}
+
+.is-animate > div {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.is-animate > div:nth-child(1) { animation-delay: 0.0s }
+.is-animate > div:nth-child(2) { animation-delay: 0.1s }
+.is-animate > div:nth-child(3) { animation-delay: 0.2s }
+.is-animate > div:nth-child(4) { animation-delay: 0.3s }
+.is-animate > div:nth-child(5) { animation-delay: 0.4s }
+.is-animate > div:nth-child(6) { animation-delay: 0.5s }
+.is-animate > div:nth-child(7) { animation-delay: 0.6s }
+
+
+@keyframes style {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    box-shadow: 0px 0px 0px 0px;
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@keyframes letterspacing {
+  0% {
+    filter: blur(0.1rem);
+  }
+  
+  
+  100% {
+    filter: blur(0.5rem);
+  }
+    to {
+       letter-spacing: none;
+        filter: blur(0rem);
+  }
+}
+<!--- Animation Projects end--->
+
+<!--flip card Start--->
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+ 
+  
+}
+
+.flip-card-back {
+  background-color:#282e34;
+  color: white;
+  transform: rotateY(180deg);
+  border:1px solid gray;
+  border-radius:10px;
+}
+<!--- flip Card End --->
+<!---model css start--->
+ .mode ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.mode li {
+  float: left;
+  background:#000;
+  #FFF;
+}
+
+.mode li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+   padding: 0px 10px;
+  text-decoration: none;
+}
+
+.mode li a:hover:not(.active) {
+  background-color: #9853cc;
+  color:white;
+  text-decoration: none;
+}
+
+<!--Modal css end---->
+.img-fluid{
+	border-radius: 50px;
+}
+.img-fluid {
+    border-radius: 50px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.text_effects{
+	text-shadow:2px 2px 2px blue;
+	transition: transform 2s;
+}
+.text_effects:hover{
+	transform: rotate(360deg);
+}
